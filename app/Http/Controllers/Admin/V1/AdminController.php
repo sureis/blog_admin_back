@@ -1,8 +1,9 @@
 <?php
 namespace App\Http\Controllers\Admin\V1;
 
-use App\Http\Controllers\Admin\Transformers\AdminTransformer;
+use App\Http\Transformers\AdminTransformer;
 use App\Models\Admin;
+use App\Http\Controllers\BaseController;
 
 class AdminController extends BaseController
 {

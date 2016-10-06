@@ -1,9 +1,10 @@
 <?php
 namespace App\Http\Controllers\Admin\V1;
 
-use App\Http\Controllers\Admin\Transformers\UserTransformer;
+use App\Http\Transformers\UserTransformer;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\BaseController;
 
 class UserController extends BaseController
 {

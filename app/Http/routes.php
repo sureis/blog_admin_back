@@ -59,3 +59,26 @@ $api->version('v1', [
     });
 
 });
+
+
+$api->version('v1', [
+    'namespace' => 'App\Http\Controllers\Client\V1',
+    'middleware' => ['cors']
+], function ($api) {
+
+    //分类标签 ---start
+
+    //分类标签 ---end
+
+    //文章管理 ---start
+    $api->get('articleList/{limit}', ['uses' => 'ArticleController@index']);
+    //文章管理 ---end
+
+    $api->group(['middleware' => 'api.auth'], function ($api) {
+
+        //用户管理 ---start
+
+        //用户管理 ---end
+    });
+
+});

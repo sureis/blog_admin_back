@@ -1,10 +1,11 @@
 <?php
 namespace App\Http\Controllers\Admin\V1;
 
-use App\Http\Controllers\Admin\Transformers\ContentTransformer;
+use App\Http\Transformers\ContentTransformer;
 use App\Models\Content;
 use App\Models\Relationship;
 use Illuminate\Http\Request;
+use App\Http\Controllers\BaseController;
 
 class ContentController extends BaseController
 {

@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Transformers;
+namespace App\Http\Transformers;
 
-use App\Models\Admin;
 use App\Models\User;
 use League\Fractal\TransformerAbstract;
 

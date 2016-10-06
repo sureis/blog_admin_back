@@ -1,9 +1,10 @@
 <?php
 namespace App\Http\Controllers\Admin\V1;
 
-use App\Http\Controllers\Admin\Transformers\MetaTransformer;
+use App\Http\Transformers\MetaTransformer;
 use App\Models\Meta;
 use Illuminate\Http\Request;
+use App\Http\Controllers\BaseController;
 
 class MetaController extends BaseController
 {

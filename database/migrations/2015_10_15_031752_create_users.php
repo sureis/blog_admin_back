@@ -30,7 +30,7 @@ class CreateUsers extends Migration
             $table->increments('id');
             $table->string('email')->unique()->index();
             $table->string('phone', 11)->unique()->index();
-            $table->string('name', 50)->index();
+            $table->string('username', 50)->index();
             $table->integer('type');
             $table->string('password');
             $table->string('url', 200);

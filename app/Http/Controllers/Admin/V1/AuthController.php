@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin\V1;
 use App\Models\User;
 use Illuminate\Auth\AuthManager;
 use Illuminate\Http\Request;
+use App\Http\Controllers\BaseController;
 
 class AuthController extends BaseController
 {
